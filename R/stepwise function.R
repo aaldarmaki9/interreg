@@ -1,16 +1,20 @@
 #' @title Interactive Stepwise Regression Model
 #'
-#' @description \code{stepreg}builds an interactive stepwise regression application for the inputted data set.
+#' @description
 #'
-#' @details This function builds an interactive stepwise regression application for the inputted data set and includes model summary, distribution of variables,
+#' \code{stepreg}builds an interactive stepwise regression application for the inputted data set.
+#'
+#' @details
+#' This function builds an interactive stepwise regression application for the inputted data set and includes model summary, distribution of variables,
 #' linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
 #'
 #' @param data an object of class data frame.
-#' @export
+#'
 #' @import tidyr corrplot ggplot2 dplyr relaimpo shiny MASS
+#' @export
 #' @return an interactive shiny application for choosing outcome variable from the data set inputted to run stepwise regression.
 #' @examples
-#' # \dontrun{stepreg(Boston)}
+#' \dontrun{stepreg(Boston)}
 #'
 stepreg <- function(data){
   if(!require(dplyr)){
@@ -153,7 +157,7 @@ stepreg <- function(data){
       plot(data[,input$examine], data[,input$outcome], main="Scatterplot",
            xlab=input$examine, ylab=input$outcome, pch=19)})
 
-    # Histogram output var 1
+    # Histogram output
     output$distribution1 <- renderPlot({
       t <-function(data, fill="red", bins=20){
         index <- sapply(data, is.numeric)

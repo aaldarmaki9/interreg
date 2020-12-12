@@ -1,18 +1,24 @@
 #' @title Interactive Simple Linear Regression
 #'
 #' @description
+#'
 #' \code{slreg} builds an interactive simple linear regression application for the inputted dataset.
+#'
+#'
 #' @details
 #' This function builds a user-friendly simple linear regression shiny application for the inputted dataset and includes model summary, data summary,
 #'distribution of variables, linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
 #'
 #' @param data an object of class dataframe.
-#' @export
+#'
 #' @import shiny broom ggplot2 corrplot
 #'
+#' @export
+#'
 #' @return an interactive shiny application for choosing outcome and independent variables from the dataset inputted to run simple linear regression on.
+#'
 #' @examples
-#' # \dontrun{slreg(swiss)}
+#' \dontrun{slreg(swiss)}
 
 slreg <- function(data){
   if(!require(shiny)){

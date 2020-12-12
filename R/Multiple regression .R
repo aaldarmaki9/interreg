@@ -1,17 +1,20 @@
-#' Interactive Multiple Linear Regression
+#' @title Interactive Multiple Linear Regression
 #'
 #'@description
-#' \code{multreg} builds an interactive multiple linear regression application for the inputted dataset.
-#'  @details
-#'  This function builds an interactive multiple linear regression application for the inputted dataset and includes model summary, distribution of variables,
-#' linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
-#' @param data an object of class dataframe.
-#' @export
-#' @import shiny dplyr ggplot2 corrplot tidyr
 #'
+#' \code{multreg} builds an interactive multiple linear regression application for the inputted dataset.
+#'
+#'@details
+#' This function builds an interactive multiple linear regression application for the inputted dataset and includes model summary, distribution of variables,
+#' linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
+#'
+#'@param data an object of class dataframe.
+#'
+#' @import shiny dplyr ggplot2 corrplot tidyr
+#' @export
 #' @return an interactive shiny application for choosing outcome and independent variables from the dataset inputted to run multiple linear regression on.
 #' @examples
-#' #\dontrun{multreg(mtcars)}
+#' \dontrun{multreg(mtcars)}
 
 multreg <- function(data){
   if(!require(shiny)){
@@ -71,7 +74,7 @@ multreg <- function(data){
 
   # SERVER
   server <- function(input, output) {
-    # Linear Regression output
+    # Multiple Linear Regression output
     output$summary <- renderPrint({
       lm1 <-lm(reformulate(input$indepvar, input$outcome), data = data)
       summary(lm1)
