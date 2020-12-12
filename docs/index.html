@@ -75,22 +75,27 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#interactive-regression-models-with-interreg-package" class="anchor"></a>Interactive Regression Models with Interreg Package</h1></div>
 <p>The goal of interreg package is to provide a fast and friendly way to create an interactive shiny app for fitting simple linear, multiple linear, and stepwise regression models.</p>
+<p><img src="ai.jpg"></p>
+<p>Image by Gred Altmann from Pixabay</p>
 </div>
 <div id="details" class="section level1">
 <h1 class="hasAnchor">
 <a href="#details" class="anchor"></a>Details</h1>
 <p>In the shiny app, there will be tabs to navigate the different uses of the shiny app. Here are some examples using the mtcars data set on the multiple regression function:</p>
-<p>To arrive at the popup shown below the user must input multreg(mtcars). Once that line of code is run, a page to display a visualization will appear with the choices of inputs on the side of the popup window.: <img src="sp.png" alt="regscatterplot"></p>
-<p>Then as the user clicks the tabs they will be moved to the different outputs that can be given. <img src="ap.png" alt="linear assumptions"><img src="dt.png" alt="distributions"><img src="fg.png" alt="fitted nd residuals"><img src="corr.png" alt="corrmatrix"></p>
-<p><strong>Install interreg package</strong></p>
-<p>To download this package use the following code.</p>
-<pre class="{r}"><code>
-#install interreg package
+<p>To arrive at the popup shown below the user must input multreg(mtcars). Once that line of code is run, a page to display a visualization will appear with the choices of inputs on the side of the popup window:</p>
+<p><img src="sp.png"></p>
+<p>Then as the user clicks the tabs they will be moved to the different outputs that can be given.</p>
+<p><img src="ap.png"></p>
+<p><img src="dt.png"></p>
+<p><img src="fg.png"></p>
+<p><img src="corr.png"></p>
+<p><strong>Install package with</strong></p>
+<pre class="{r}"><code>#install interreg package
 if (!require(interreg)) {
  install.packages("interreg")
 }
-devtools::install_github("aaldarmaki9/interreg", build_vignettes = TRUE)</code></pre>
-<p>The source code is available <a href="https://github.com/aaldarmaki/interreg">here</a>.</p>
+devtools::install_github("etuhabonye/interreg", build_vignettes = TRUE)</code></pre>
+<p>The source code is available <a href="https://github.com/aaldarmaki9/interreg">here</a>.</p>
 <p>Date created | December 11 2020</p>
 </div>
 
@@ -117,6 +122,7 @@ devtools::install_github("aaldarmaki9/interreg", build_vignettes = TRUE)</code><
 <h2>Developers</h2>
 <ul class="list-unstyled">
 <li>Ahmed Aldarmaki <br><small class="roles"> Author, maintainer </small>  </li>
+<li>Emma Tuhabonye <br><small class="roles"> Author </small>  </li>
 </ul>
 </div>
 
@@ -125,7 +131,7 @@ devtools::install_github("aaldarmaki9/interreg", build_vignettes = TRUE)</code><
 
 
       <footer><div class="copyright">
-  <p>Developed by Ahmed Aldarmaki.</p>
+  <p>Developed by Ahmed Aldarmaki, Emma Tuhabonye.</p>
 </div>
 
 <div class="pkgdown">

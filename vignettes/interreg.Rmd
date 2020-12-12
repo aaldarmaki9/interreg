@@ -14,12 +14,15 @@ This package was created in order to simplify the process of running simple line
 **Usage**
 
 Install package with:
+
 ```{r, eval=FALSE}
+
 # The easiest way to get interreg is to install it from the development version from GitHub:
 if(!require(devtools)){
   install.packages("devtools")
 }
 devtools::install_github("aaldarmaki9/interreg")
+
 ```
 
 
