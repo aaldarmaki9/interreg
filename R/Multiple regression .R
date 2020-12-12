@@ -1,11 +1,8 @@
 #' @title Interactive Multiple Linear Regression
 #'
-#'@description
+#' @description
 #'
-#' \code{multreg} builds an interactive multiple linear regression application for the inputted dataset.
-#'
-#'@details
-#' This function builds an interactive multiple linear regression application for the inputted dataset and includes model summary, distribution of variables,
+#' \code{multreg} builds an interactive multiple linear regression application for the inputted dataset, and includes model summary, distribution of variables,
 #' linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
 #'
 #'@param data an object of class dataframe.
