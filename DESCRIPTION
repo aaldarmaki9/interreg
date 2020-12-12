@@ -1,0 +1,30 @@
+Package: interreg
+Title: Interactive Regression Models
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = c("Emma", "Ahmed"),
+           family = c("Tuhabonye", "Aldarmaki"),
+           role = c("aut", "cre"),
+           email = c("etuhabonye@wesleyan.edu", "aaldarmaki@wesleyan.edu"))
+Description: This package creates an interactive shiny app for fitting simple linear, multiple linear, 
+ and stepwise regression models.
+License: MIT + file LICENSE
+BugReports: https://github.com/aaldarmaki9/interreg/issues
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports:
+  dplyr, 
+  ggplot2, 
+  corrplot, 
+  broom, 
+  shiny, 
+  tidyr, 
+  relaimpo, 
+  MASS
+
