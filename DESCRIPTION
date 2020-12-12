@@ -2,10 +2,11 @@ Package: interreg
 Title: Interactive Regression Models
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = c("Emma", "Ahmed"),
-           family = c("Tuhabonye", "Aldarmaki"),
+    c(person("Ahmed",
+           "Aldarmaki",
            role = c("aut", "cre"),
-           email = c("etuhabonye@wesleyan.edu", "aaldarmaki@wesleyan.edu"))
+           email = "aaldarmaki@wesleyan.edu"), 
+           person("Emma", "Tuhabonye", role = c("aut")))
 Description: This package creates an interactive shiny app for fitting simple linear, multiple linear, 
  and stepwise regression models.
 License: MIT + file LICENSE
