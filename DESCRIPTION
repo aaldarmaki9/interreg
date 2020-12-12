@@ -27,5 +27,6 @@ Imports:
   shiny, 
   tidyr, 
   relaimpo, 
-  MASS
+  MASS,
+  psych
 

@@ -10,7 +10,7 @@
 #'
 #' @param data an object of class data frame.
 #'
-#' @import tidyr corrplot ggplot2 dplyr relaimpo shiny MASS
+#' @import tidyr corrplot ggplot2 dplyr relaimpo shiny MASS psych
 #' @export
 #' @return an interactive shiny application for choosing outcome variable from the data set inputted to run stepwise regression.
 #' @examples
@@ -43,6 +43,10 @@ stepreg <- function(data){
   if(!require(corrplot)){
     install.packages("corrplot")
     library(corrplot)
+  }
+  if(!require(psych)){
+    install.packages("psych")
+    library(psych)
   }
 
   ui <- fluidPage(

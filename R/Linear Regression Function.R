@@ -11,7 +11,7 @@
 #'
 #' @param data an object of class dataframe.
 #'
-#' @import shiny broom ggplot2 corrplot
+#' @import shiny broom ggplot2 corrplot psych
 #'
 #' @export
 #'
@@ -38,6 +38,10 @@ slreg <- function(data){
   if(!require(dplyr)){
     install.packages("dplyr")
     library(dplyr)}
+  if(!require(psych)){
+    install.packages("psych")
+    library(psych)
+  }
   ui <- fluidPage(
     titlePanel(paste("Linear Regression Model (Dataset:", deparse(substitute(data)),")")),
     sidebarLayout(

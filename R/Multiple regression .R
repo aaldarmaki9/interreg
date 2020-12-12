@@ -11,7 +11,7 @@
 #'
 #' @param data an object of class dataframe.
 #'
-#' @import shiny dplyr ggplot2 corrplot tidyr
+#' @import shiny dplyr ggplot2 corrplot tidyr psych
 #' @export
 #' @return an interactive shiny application for choosing outcome and independent variables from the dataset inputted to run multiple linear regression on.
 #' @examples
@@ -36,6 +36,10 @@ multreg <- function(data){
   if(!require(tidyr)){
     install.packages("tidyr")
     library(tidyr)
+  }
+  if(!require(psych)){
+    install.packages("psych")
+    library(psych)
   }
   ui <- fluidPage(
     titlePanel(paste("Multiple Regression Model (Dataset:", deparse(substitute(data)),")")),
