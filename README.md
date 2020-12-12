@@ -29,11 +29,12 @@ Then as the user clicks the tabs they will be moved to the different outputs tha
 **Install package with**
 
 ```{r}
-#install interreg package
-if (!require(interreg)) {
- install.packages("interreg")
+
+if(!require(devtools)){
+  install.packages("devtools")
 }
-devtools::install_github("aaldarmaki9/interreg", build_vignettes = TRUE)
+devtools::install_github("aaldarmaki9/interreg")
+
 ```
 
 The source code is available [here](https://github.com/aaldarmaki9/interreg).

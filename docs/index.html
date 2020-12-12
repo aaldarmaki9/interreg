@@ -90,11 +90,12 @@
 <p><img src="fg.png"></p>
 <p><img src="corr.png"></p>
 <p><strong>Install package with</strong></p>
-<pre class="{r}"><code>#install interreg package
-if (!require(interreg)) {
- install.packages("interreg")
+<pre class="{r}"><code>
+if(!require(devtools)){
+  install.packages("devtools")
 }
-devtools::install_github("aaldarmaki9/interreg", build_vignettes = TRUE)</code></pre>
+devtools::install_github("aaldarmaki9/interreg")
+</code></pre>
 <p>The source code is available <a href="https://github.com/aaldarmaki9/interreg">here</a>.</p>
 <p>Date created | December 11 2020</p>
 </div>
