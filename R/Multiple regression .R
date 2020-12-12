@@ -2,16 +2,21 @@
 #'
 #' @description
 #'
-#' \code{multreg} builds an interactive multiple linear regression application for the inputted dataset, and includes model summary, distribution of variables,
+#' \code{multreg} builds an interactive multiple linear regression application for the inputted dataset.
+#'
+#'
+#' @details
+#' This function builds an interactive multiple linear regression application for the inputted dataset, and includes model summary, distribution of variables,
 #' linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
 #'
-#'@param data an object of class dataframe.
+#' @param data an object of class dataframe.
 #'
 #' @import shiny dplyr ggplot2 corrplot tidyr
 #' @export
 #' @return an interactive shiny application for choosing outcome and independent variables from the dataset inputted to run multiple linear regression on.
 #' @examples
 #' \dontrun{multreg(mtcars)}
+
 
 multreg <- function(data){
   if(!require(shiny)){

@@ -14,10 +14,11 @@ an interactive shiny application for choosing outcome and independent variables 
 }
 \description{
 \code{multreg} builds an interactive multiple linear regression application for the inputted dataset.
-@details
-This function builds an interactive multiple linear regression application for the inputted dataset and includes model summary, distribution of variables,
+}
+\details{
+This function builds an interactive multiple linear regression application for the inputted dataset, and includes model summary, distribution of variables,
 linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
 }
 \examples{
-#\dontrun{multreg(mtcars)}
+\dontrun{multreg(mtcars)}
 }

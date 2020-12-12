@@ -20,6 +20,6 @@ This function builds an interactive stepwise regression application for the inpu
 linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
 }
 \examples{
-# \dontrun{stepreg(Boston)}
+\dontrun{stepreg(Boston)}
 
 }

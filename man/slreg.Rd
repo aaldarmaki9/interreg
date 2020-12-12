@@ -20,5 +20,5 @@ This function builds a user-friendly simple linear regression shiny application 
 distribution of variables, linear assumptions plots, fitted and residuals graphs and table values, and correlation matrix of the variables.
 }
 \examples{
-# \dontrun{slreg(swiss)}
+\dontrun{slreg(swiss)}
 }
